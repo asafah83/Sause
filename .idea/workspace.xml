@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f499fda-b6fe-4108-98f2-0980f9731586" name="Changes" comment="Push new changes on pom.xml file">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4f499fda-b6fe-4108-98f2-0980f9731586" name="Changes" comment="pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/tc1Negative.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/tc1Negative.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/tc2PositiveTestE2E.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/tc2PositiveTestE2E.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/CheckoutCompletePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/ProductsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BuyProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BuyProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.BuyProductTest.executor": "Run",
+    "TestNG.BuyProductTest.tc3Sorting.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
     "TestNG.LoginTest.tc1loginFailed1.executor": "Run",
     "ignore.virus.scanning.warn.message": "true",
@@ -66,8 +58,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Automation\Saucedemo Maven Project Based On Java and Selenium\src\test\java" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Automation\SaucedemoMavenProjectBasedOnJavaAndSelenium\src\test\java" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
+  <component name="RunManager" selected="TestNG.BuyProductTest.tc3Sorting">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SaucedemoMavenProjectBasedOnJavaAndSelenium" />
       <method v="2">
@@ -92,6 +87,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.BuyProductTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuyProductTest.tc3Sorting" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AdvancedSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.BuyProductTest" />
+      <option name="METHOD_NAME" value="tc3Sorting" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -135,6 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BuyProductTest.tc3Sorting" />
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.BuyProductTest" />
         <item itemvalue="TestNG.LoginTest.tc1loginFailed1" />
@@ -150,12 +164,31 @@
       <option name="presentableId" value="Default" />
       <updated>1735160868025</updated>
     </task>
+    <task id="LOCAL-00001" summary="Push new changes on pom.xml file">
+      <option name="closed" value="true" />
+      <created>1735204889594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735204889594</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pom.xml">
+      <option name="closed" value="true" />
+      <created>1735205043869</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735205043869</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit" />
     <MESSAGE value="Push new changes on pom.xml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push new changes on pom.xml file" />
+    <MESSAGE value="pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

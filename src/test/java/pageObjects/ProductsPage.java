@@ -1,9 +1,11 @@
 package pageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import java.util.List;
@@ -13,6 +15,9 @@ public class ProductsPage extends BasePage {
     WebElement shoppingCartButton;
     @FindBy(css = ".title")
     WebElement productsTitleLabel;
+    @FindBy(css = "[class='product_sort_container']")
+    WebElement sortDropDown;
+
 //    @FindBy(css = "")
 //    WebElement el1;
 //    @FindBy(css = "")
@@ -51,24 +56,19 @@ public class ProductsPage extends BasePage {
         click(shoppingCartButton);
     }
 
+    @Step("")
     public void verifyTitlePage(String expected) {
         String actual = getText(productsTitleLabel);
         Assert.assertEquals(expected, actual);
     }
 
-//    public void verify1YouInProductsPage(String title) {
-//        String pageTitle = driver.findElement(By.cssSelector(".title")).getText();
-//        if (pageTitle.equals(title)) {
-//            System.out.println("You are on the correct page");
-//        } else {
-//            System.out.println("Probably, you are not on the correct page");
-//        }
-//    }
-//    public boolean isProductsPage() {
-//        if (getText(productsTitleLabel).equals("Product")) {
-//            return true;
-//        }
-//        return false;
-//    }
-
+    @Step("sort by one of the options")
+    public void sortByOption(String optionText) {
+        Select select = new Select(sortDropDown);
+        select.selectByVisibleText(optionText);
+        sleep(1500);// Sort using visible text of the option
+    }
 }
+
+
+

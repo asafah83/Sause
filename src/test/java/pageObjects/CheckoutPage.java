@@ -20,9 +20,9 @@ public class CheckoutPage extends BasePage {
     }
 
     public void fillInfoAndContinue(String firstNameValue, String lastNameValue, String zipCode) throws InterruptedException {
-        fillTesxt(firstNameField, firstNameValue);
-        fillTesxt(lastNameField, lastNameValue);
-        fillTesxt(postalCodeField, zipCode);
+        fillText(firstNameField, firstNameValue);
+        fillText(lastNameField, lastNameValue);
+        fillText(postalCodeField, zipCode);
         click(continueButton);
         sleep(1500);
     }

@@ -1,11 +1,12 @@
 package tests;
 
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.annotations.Test;
 import pageObjects.*;
 
-public class BuyProductTest extends BaseTest{
-   // WebDriver driver;
+public class BuyProductTest extends BaseTest {
+    // WebDriver driver;
     //   public static void main(String[] args) throws InterruptedException {
 //        WebDriver driver = new ChromeDriver();
 //        driver.manage().window().maximize();
@@ -48,6 +49,13 @@ public class BuyProductTest extends BaseTest{
         productsPage.verifyTitlePage("Products");
     }
 
-
+    @Test
+    @Description("This test check the functionality of the sort")
+    public void tc3Sorting() throws InterruptedException {
+        LoginPage lp = new LoginPage(driver);
+        lp.login("standard_user", "secret_sauce");
+        ProductsPage productsPage = new ProductsPage(driver);
+        productsPage.sortByOption("Price (low to high)");
+    }
 }
 

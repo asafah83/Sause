@@ -2,7 +2,12 @@ package pageObjects;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestListener;
+
+import java.time.Duration;
+import java.util.List;
 
 public class BasePage implements ITestListener {
     WebDriver driver;
@@ -12,8 +17,21 @@ public class BasePage implements ITestListener {
         // we will add, into the constructor, the page factory, once.
         PageFactory.initElements(driver, this);
     }
-
-    public void fillTesxt(WebElement el, String text) {
+    public void getWaitForElement(WebElement el) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.elementToBeClickable(el));
+    }
+    public void selectSpecificValueFromList(String element, String textValue) {
+        List<WebElement> list = driver.findElements(By.cssSelector(element));
+        for (WebElement el : list) {
+            getWaitForElement(el);
+            if (el.getText().equalsIgnoreCase(textValue)) {
+                click(el);
+                break;
+            }
+        }
+    }
+    public void fillText(WebElement el, String text) {
         highlightElement(el, "yellow");
         el.clear();
         el.sendKeys(text);
@@ -36,6 +54,13 @@ public class BasePage implements ITestListener {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }
+    public void getAlertOk() {
+        driver.switchTo().alert().accept(); // click OK in alert
+    }
+
+    public void getAlertCancel() {
+        driver.switchTo().alert().dismiss(); // click cancel in alert
     }
 
 

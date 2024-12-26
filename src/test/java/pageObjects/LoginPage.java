@@ -19,8 +19,8 @@ public class LoginPage extends BasePage {
     }
 
     public void login(String userNameValue, String passwordValue) throws InterruptedException {
-        fillTesxt(userNameField, userNameValue);
-        fillTesxt(passwordField, passwordValue);
+        fillText(userNameField, userNameValue);
+        fillText(passwordField, passwordValue);
         click(submitButton);
         sleep(1500);
     }
