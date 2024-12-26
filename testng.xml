@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Automation/Saucedemo Maven Project Based On Java and Selenium/src/test/java">
+        <classes>
+            <class name="tests.BuyProductTest">
+                <methods>
+                    <include name="tc1Negative"/>
+                    <include name="tc2PositiveTestE2E"/
+                    >
+                </methods>
+            </class>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="tc1loginFailed1"/>
+                    <include name="tc2loginSuccess"/>
+                    <include name="tc3JustaPrint"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
