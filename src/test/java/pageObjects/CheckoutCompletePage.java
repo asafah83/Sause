@@ -1,6 +1,5 @@
 package pageObjects;
 
-import jdk.jfr.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,7 +20,6 @@ public class CheckoutCompletePage extends BasePage {
     public CheckoutCompletePage(WebDriver driver) {
         super(driver);
     }
-@Description("")
     public void printAllMessage() {
         String thanksMessage = getText(driver.findElement(By.cssSelector(".complete-header")));
         String orderMessage = getText(driver.findElement(By.cssSelector(".complete-text")));

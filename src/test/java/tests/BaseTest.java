@@ -18,12 +18,19 @@ public class BaseTest {
     WebDriver driver;
     @BeforeClass
     public void setup() {
-        //System.setProperty("Webdriver.chrome.driver","C:\\Automation\\drivers");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-       // Utils utils = new Utils(); its because we made the Utils method as static
         driver.get(Utils.readProperty("url"));
     }
+ //   @BeforeClass
+//    public void setup() {
+//        //System.setProperty("Webdriver.chrome.driver","C:\\Automation\\drivers");
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//       // Utils utils = new Utils(); its because we made the Utils method as static
+//        driver.get(Utils.readProperty("url"));
+//    }
+
 
     @AfterClass
     public void tearDown() throws InterruptedException {

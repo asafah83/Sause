@@ -9,7 +9,7 @@ public class Utils {
         public static String readProperty(String key) {
 
             String value="";
-            try (InputStream input = new FileInputStream("./src/data/configuration.properties")) {
+            try (InputStream input = new FileInputStream("./src/test/resources/data/configuration.properties")) {
                 Properties prop = new Properties();
 
                 // load a properties file

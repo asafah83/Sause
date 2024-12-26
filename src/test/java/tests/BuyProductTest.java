@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Step;
 import org.testng.annotations.Test;
 import pageObjects.*;
 
@@ -11,12 +12,13 @@ public class BuyProductTest extends BaseTest{
 //        driver.get("https://www.saucedemo.com/");
 
     @Test
+    @Step("Login and verify its the Products page")
     public void tc1Negative() throws InterruptedException {
         LoginPage lp = new LoginPage(driver);
         lp.login("standard_user", "secret_sauce");
         ProductsPage productsPage = new ProductsPage(driver);
-        productsPage.selectProduct("Sauc Labs Fleece Jacket");
-        productsPage.verifyTitlePage("Product");
+        productsPage.selectProduct("Sauce Labs Fleece Jacket");
+        productsPage.verifyTitlePage("Products");
     }
 
     @Test

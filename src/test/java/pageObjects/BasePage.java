@@ -1,14 +1,8 @@
 package pageObjects;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-
-import java.io.File;
-import java.io.IOException;
 
 public class BasePage implements ITestListener {
     WebDriver driver;

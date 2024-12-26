@@ -7,8 +7,7 @@
             <class name="tests.BuyProductTest">
                 <methods>
                     <include name="tc1Negative"/>
-                    <include name="tc2PositiveTestE2E"/
-                    >
+                    <include name="tc2PositiveTestE2E"/>
                 </methods>
             </class>
             <class name="tests.LoginTest">
