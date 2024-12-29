@@ -4,6 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.ITestListener;
 
 import java.time.Duration;
@@ -17,14 +18,15 @@ public class BasePage implements ITestListener {
         // we will add, into the constructor, the page factory, once.
         PageFactory.initElements(driver, this);
     }
-    public void getWaitForElement(WebElement el) {
+
+    public void waitForElement(WebElement el) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(el));
     }
     public void selectSpecificValueFromList(String element, String textValue) {
         List<WebElement> list = driver.findElements(By.cssSelector(element));
         for (WebElement el : list) {
-            getWaitForElement(el);
+            waitForElement(el);
             if (el.getText().equalsIgnoreCase(textValue)) {
                 click(el);
                 break;
@@ -32,17 +34,20 @@ public class BasePage implements ITestListener {
         }
     }
     public void fillText(WebElement el, String text) {
+        waitForElement(el);
         highlightElement(el, "yellow");
         el.clear();
         el.sendKeys(text);
     }
 
     public void click(WebElement el) {
+        waitForElement(el);
         highlightElement(el, "yellow");
         el.click();
     }
 
     public String getText(WebElement el) {
+        waitForElement(el);
         highlightElement(el, "yellow");
         return el.getText();
     }
@@ -63,7 +68,6 @@ public class BasePage implements ITestListener {
         driver.switchTo().alert().dismiss(); // click cancel in alert
     }
 
-
     private void highlightElement(WebElement element, String color) {
         //keep the old style to change it back
         String originalStyle = element.getAttribute("style");
@@ -80,6 +84,10 @@ public class BasePage implements ITestListener {
 
     }
 
+//    public void assertion(WebElement element, String actualValue, String expectedValue) {
+//        actualValue = getText(element);
+//        Assert.assertEquals(actualValue, expectedValue);
+//    }
 
 
 //    @AfterMethod

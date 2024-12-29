@@ -87,7 +87,7 @@
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.5.3</version>
+    <version>5.9.2</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured -->
 <dependency>
@@ -97,7 +97,7 @@
 <dependency>
     <groupId>ch.qos.logback</groupId>
     <artifactId>logback-classic</artifactId>
-    <version>1.4.11</version>
+    <version>1.5.15</version>
 </dependency>
 <dependency>
     <groupId>org.slf4j</groupId>

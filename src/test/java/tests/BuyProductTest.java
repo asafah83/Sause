@@ -13,16 +13,16 @@ public class BuyProductTest extends BaseTest {
 //        driver.get("https://www.saucedemo.com/");
 
     @Test
-    @Step("Login and verify its the Products page")
+    @Description("Test 1 - Login to the website and verify its the correct page")
     public void tc1Negative() throws InterruptedException {
         LoginPage lp = new LoginPage(driver);
         lp.login("standard_user", "secret_sauce");
         ProductsPage productsPage = new ProductsPage(driver);
-        productsPage.selectProduct("Sauce Labs Fleece Jacket");
-        productsPage.verifyTitlePage("Products");
+        productsPage.verifyPageTitle("Products");
     }
 
     @Test
+    @Description("An E2E test: login > select product > add to cart > buy the product")
     public void tc2PositiveTestE2E() throws InterruptedException {
         LoginPage lp = new LoginPage(driver);
         lp.login("standard_user", "secret_sauce");
@@ -40,13 +40,16 @@ public class BuyProductTest extends BaseTest {
         checkoutPage.fillInfoAndContinue("Asaf", "Aharoni", "12345");
 
         CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage(driver);
-        checkoutOverviewPage.finish();
+        checkoutOverviewPage.verifyPageTitle("Checkout: Overview");
+        checkoutOverviewPage.clickFinish();
 
         CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage(driver);
-        checkoutCompletePage.printAllMessage();
+checkoutOverviewPage.verifyPageTitle("Checkout: Complete!");
         checkoutCompletePage.backToHome();
 
-        productsPage.verifyTitlePage("Products");
+        productsPage.verifyPageTitle("Products");
+
+      //  productsPage.verifyTitlePage("Products");
     }
 
     @Test

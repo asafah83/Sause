@@ -18,13 +18,6 @@ public class ProductsPage extends BasePage {
     @FindBy(css = "[class='product_sort_container']")
     WebElement sortDropDown;
 
-//    @FindBy(css = "")
-//    WebElement el1;
-//    @FindBy(css = "")
-//    WebElement el1;
-//    @FindBy(css = "")
-//    WebElement el1;
-
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
@@ -42,6 +35,7 @@ public class ProductsPage extends BasePage {
         }
     }
 
+    @Step("Select a product by providing the product name")
     public void selectProduct(String name) {
         List<WebElement> list = driver.findElements(By.cssSelector(".inventory_item_name"));
         for (WebElement el : list) {
@@ -56,8 +50,9 @@ public class ProductsPage extends BasePage {
         click(shoppingCartButton);
     }
 
-    @Step("")
-    public void verifyTitlePage(String expected) {
+    @Step("Verify the page title")
+    public void verifyPageTitle(String expected) {
+        waitForElement(productsTitleLabel);
         String actual = getText(productsTitleLabel);
         Assert.assertEquals(expected, actual);
     }

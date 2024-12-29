@@ -22,10 +22,7 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("standard_user", "secret_sauce");
         ProductsPage productsPage = new ProductsPage(driver);
-productsPage.verifyTitlePage("Product");    }
-    @Test
-    public void tc3JustaPrint() {
-        System.out.println("test 123");
+productsPage.verifyPageTitle("Product");
     }
 
 }

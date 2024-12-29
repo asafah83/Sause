@@ -1,25 +1,24 @@
 package pageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class CheckoutCompletePage extends BasePage {
-    @FindBy(css = "#back-to-products")
+    @FindBy(css = "[id='back-to-products']")
     WebElement backToProductButton;
-//    @FindBy(css = "")
-//    WebElement el;
-//    @FindBy(css = "")
-//    WebElement el;
-//    @FindBy(css = "")
-//    WebElement el;
+    @FindBy(css = "[class='title']")
+    WebElement checkoutCompletedPageTitle;
 //    @FindBy(css = "")
 //    WebElement el;
 
     public CheckoutCompletePage(WebDriver driver) {
         super(driver);
     }
+
     public void printAllMessage() {
         String thanksMessage = getText(driver.findElement(By.cssSelector(".complete-header")));
         String orderMessage = getText(driver.findElement(By.cssSelector(".complete-text")));
@@ -29,6 +28,12 @@ public class CheckoutCompletePage extends BasePage {
         System.out.println(completedMessage);
     }
 
+    public void verifyPageTitle(String expectedPageTitle) {
+        String actualPageTitle = getText(checkoutCompletedPageTitle);
+        Assert.assertEquals(actualPageTitle, expectedPageTitle);
+    }
+
+    @Step("Click on the 'Back Home' button")
     public void backToHome() throws InterruptedException {
         click(backToProductButton);
         sleep(1500);
