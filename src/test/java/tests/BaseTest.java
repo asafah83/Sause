@@ -6,10 +6,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 import utils.Utils;
 
 import java.io.File;
@@ -17,13 +14,14 @@ import java.io.IOException;
 
 public class BaseTest {
     WebDriver driver;
-    @BeforeClass
+
+    @BeforeMethod
     public void setup() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(Utils.readProperty("url"));
     }
- //   @BeforeClass
+    //   @BeforeClass
 //    public void setup() {
 //        //System.setProperty("Webdriver.chrome.driver","C:\\Automation\\drivers");
 //        driver = new ChromeDriver();
@@ -33,11 +31,14 @@ public class BaseTest {
 //    }
 
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() throws InterruptedException {
-        driver.quit();
-        Thread.sleep(1500);
+        if (driver != null) {
+            driver.quit();
+            Thread.sleep(1500);
+        }
     }
+
     /*
      * This method will run after each test,
      * it will take screenshot only for tests that failed

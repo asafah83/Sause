@@ -1,5 +1,6 @@
 package pageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,25 +24,31 @@ public class ProductPage extends BasePage {
         super(driver);
     }
 
-    public void addToCart() throws InterruptedException {
-      //  sleep(1500);
+    @Step("Add the product to the shopping cart")
+    public void addProductToCart() throws InterruptedException {
         click(addToCartButton);
         sleep(1000);
+    }
+
+    @Step("Move to the shopping cart page")
+    public void movingToShoppingCartPage() {
         click(shoppingCartButton);
-     //   sleep(1500);
     }
 
     public void backToProductsPage() {
         click(backToProductButton);
     }
+
     public void verifyPrice(String expectedPrice) {
         String actualPrice = getText(productPrice);
         Assert.assertEquals(actualPrice, expectedPrice);
     }
+
     public void verifyProductTitle(String expectedProductTitle) {
         String actualProductTitle = getText(productTitle);
         Assert.assertEquals(actualProductTitle, expectedProductTitle);
     }
+
     public void verifyProductDescription(String expectedProductDescription) {
         String actualProductDescription = getText(productDescription);
         Assert.assertEquals(actualProductDescription, expectedProductDescription);

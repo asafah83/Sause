@@ -24,15 +24,16 @@ public class ProductsPage extends BasePage {
 
     //addToCart function that based on clicking the "Add to cart" button, from the main page
     public void addToCart(String name) {
-        List<WebElement> list = driver.findElements(By.cssSelector(""));
+        List<WebElement> list = driver.findElements(By.cssSelector(".inventory_item"));
         for (WebElement el : list) {
-            WebElement titleEl = el.findElement(By.cssSelector(""));
+            WebElement titleEl = el.findElement(By.cssSelector(".inventory_item_name"));
             if (getText(titleEl).equalsIgnoreCase(name)) {
-                WebElement addBtn = el.findElement(By.cssSelector(""));
+                WebElement addBtn = el.findElement(By.cssSelector(".btn.btn_primary.btn_small.btn_inventory"));
                 click(addBtn);
                 break;
             }
         }
+        click(shoppingCartButton);
     }
 
     @Step("Select a product by providing the product name")
