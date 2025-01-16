@@ -86,7 +86,34 @@ public class ProductsPage extends BasePage {
         }
     }
 
+    @Step("")
+    public void verifyTextOfAddButton(String name) {
+        List<WebElement> list = driver.findElements(By.cssSelector(".inventory_item"));
+        for (WebElement el : list) {
+            WebElement titleEl = el.findElement(By.cssSelector(".inventory_item_name"));
+            if (getText(titleEl).equalsIgnoreCase(name)) {
+                WebElement addBtn = el.findElement(By.cssSelector(".btn.btn_primary.btn_small.btn_inventory"));
+                String actualButtonText = getText(addBtn);
+                Assert.assertEquals(actualButtonText, "Add to cart");
+            }
+        }
+    }
+
+    @Step("")
+    public void verifyAddTextReplacedWithRemoveText(String name) {
+        List<WebElement> list = driver.findElements(By.cssSelector(".inventory_item"));
+        for (WebElement el : list) {
+            WebElement titleEl = el.findElement(By.cssSelector(".inventory_item_name"));
+            if (getText(titleEl).equalsIgnoreCase(name)) {
+                WebElement removeBtn = el.findElement(By.cssSelector(".btn.btn_secondary.btn_small.btn_inventory"));
+                String actualButtonText = getText(removeBtn);
+                Assert.assertEquals(actualButtonText, "Remove");
+            }
+        }
+    }
+
     //addToCart function that based on clicking the "Add to cart" button, from the main page
+    @Step("Add product to the cart, by providing the product name")
     public void addToCart(String name) {
         List<WebElement> list = driver.findElements(By.cssSelector(".inventory_item"));
         for (WebElement el : list) {

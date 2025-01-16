@@ -28,4 +28,11 @@ public class ProductsTests extends BaseTest {
         yourCartPage.verifyPageTitle("Your Cart");
         yourCartPage.verifyTheProductExistOnCart("Sauce Labs Bike Light");
     }
+
+    @Test
+    @Description("Verify that the text inside the button, has changed from 'Add' to 'Remove', after click on it")
+    public void tc2_verifyChangingTextOfAddButton() {
+        productsPage.verifyTextOfAddButton("Sauce Labs Backpack");
+        productsPage.verifyAddTextReplacedWithRemoveText("Sauce Labs Backpack");
+    }
 }
