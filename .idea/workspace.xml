@@ -5,35 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f499fda-b6fe-4108-98f2-0980f9731586" name="Changes" comment="Refactoring methods names in the basePage">
-      <change afterPath="$PROJECT_DIR$/allure-results/05dc14b0-2d4d-4240-9cf1-717b25442b57-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0d668f7e-c85b-44bf-9131-68eec9affd7d-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0e5d7953-dd09-474a-ad4e-497fd28da6b2-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0fd763e7-82d8-412e-b489-d0e789fb8ae0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2223d6ab-1865-479e-8397-dececd69432a-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/24f24987-540d-4655-a7e4-1e9de93f0add-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3b394df2-fb29-4490-86ae-a5c3f8593b9f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/47f2e786-74f5-4c66-8b42-42a6ab056733-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8c68a005-d93c-4110-bdbd-e60dced0d7a7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9331f84d-5443-4de1-b4fd-77d3383f57c1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9d9275d4-f000-48ac-b06a-e350e599a58f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9e92d242-2d7a-4e5b-b8df-42af48f5b2c7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a80f8315-0895-4bb0-a982-c6e96999b9d5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a8a54e6a-c326-4d5f-978e-9769f4ac3e20-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b3645455-3949-4f87-93aa-7ba62985d8c7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c3e70999-cbbd-4501-963e-50d1e66c5706-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ca606803-c79c-4265-8d54-2936033274cb-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d99ccef6-8249-416e-83cf-640ce4a79ec8-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/dd7592da-8505-4110-9a0f-ef9bff662f1d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e37eae09-0aff-4cc9-9449-60dae9b78523-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f58fe861-2478-4812-9f5a-870de9e0fc9f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0761f42e-bc33-4362-a61d-2e4825a52832-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/13316d2b-c3e7-41e0-82a5-7333e10d6ab3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1b6ede2e-ffd6-463c-87e2-3f1b05ba72d8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4b4c93a9-8f5e-4a13-9c99-491d8a263e54-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4ec9905e-7018-4a40-8e0e-f4f6741b4d8e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/56b110c9-1983-418a-9cfd-33dfb54f212a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5cf0a973-5e44-4b69-8054-b224c07ef421-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5e911e36-d838-4add-a037-58e3eaa3a742-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7b41826d-ba18-4d34-bc77-6a0b969a1363-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8eb74c14-7d5e-46fd-8eaa-191513070498-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8f0cd2c2-8b48-4747-a9aa-5af4095e2f0b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/91c11646-dcc4-4826-a4fe-cee9df73497f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9c78aa0d-2e01-4d82-bbe7-999e7df0ea6a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b9a1cca5-0454-4da3-b497-f1c87d90453c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ba9f922c-077d-43a8-a8b2-94035065d9df-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/be8f4096-e3e1-48c3-bc35-bb02b8c12dea-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c065bb71-eca3-4f61-921a-f640440b9b6d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ce874185-a47a-4bd3-a3ff-996d6fdf512e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ddca90d8-a35d-43ff-9fc4-6757b24c8442-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e9b195ed-1b55-4a36-8c56-8bf7c8ebe2df-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ff8c0233-ac68-4d22-8bc8-22cac1719318-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DataDrivenTestingForLoginPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ProductsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/tc2PositiveTestE2E.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/tc2PositiveTestE2E.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/YourCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/YourCartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BuyProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BuyProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,6 +90,8 @@
     "TestNG.BuyProductTest.tc4_addProductToCartFromProductsPage.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
     "TestNG.LoginTest.tc1loginFailed1.executor": "Run",
+    "TestNG.LoginTest.tc4_loginFailedUsingDDT.executor": "Run",
+    "TestNG.ProductsTests.tc1_verifyAddingProductToCart.executor": "Debug",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Automation/SaucedemoMavenProjectBasedOnJavaAndSelenium",
@@ -97,7 +110,7 @@
       <recent name="C:\Automation\SaucedemoMavenProjectBasedOnJavaAndSelenium\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BuyProductTest.tc2PositiveTestE2E">
+  <component name="RunManager" selected="TestNG.ProductsTests.tc1_verifyAddingProductToCart">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SaucedemoMavenProjectBasedOnJavaAndSelenium" />
       <method v="2">
@@ -107,23 +120,6 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="SaucedemoMavenProjectBasedOnJavaAndSelenium" />
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BuyProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AdvancedSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.BuyProductTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,24 +160,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuyProductTest.tc3Sorting" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AdvancedSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.BuyProductTest" />
-      <option name="METHOD_NAME" value="tc3Sorting" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BuyProductTest.tc4_addProductToCartFromProductsPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AdvancedSelenium" />
       <extension name="coverage">
@@ -200,13 +178,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.tc4_loginFailedUsingDDT" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AdvancedSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="tc4_loginFailedUsingDDT" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsTests.tc1_verifyAddingProductToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AdvancedSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ProductsTests" />
+      <option name="METHOD_NAME" value="tc1_verifyAddingProductToCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ProductsTests.tc1_verifyAddingProductToCart" />
+        <item itemvalue="TestNG.LoginTest.tc4_loginFailedUsingDDT" />
         <item itemvalue="TestNG.BuyProductTest.tc2PositiveTestE2E" />
         <item itemvalue="TestNG.BuyProductTest.tc1Negative" />
         <item itemvalue="TestNG.BuyProductTest.tc4_addProductToCartFromProductsPage" />
-        <item itemvalue="TestNG.BuyProductTest.tc3Sorting" />
-        <item itemvalue="TestNG.BuyProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -290,6 +304,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/ProductsTests.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

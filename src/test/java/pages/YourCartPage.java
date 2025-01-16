@@ -1,10 +1,13 @@
 package pages;
 
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+
+import java.util.List;
 
 public class YourCartPage extends BasePage {
     @FindBy(css = "#checkout")
@@ -15,6 +18,8 @@ public class YourCartPage extends BasePage {
     WebElement continueShoppingButton;
     @FindBy(css = "[class='title']")
     WebElement yourCartPageTitle;
+    @FindBy(css = "[class='inventory_item_name']")
+    WebElement productElementName;
 
     public YourCartPage(WebDriver driver) {
         super(driver);
@@ -42,4 +47,13 @@ public class YourCartPage extends BasePage {
         Assert.assertEquals(actualPageTitle, expectedPageTitle);
     }
 
+    @Step("Verify the product name")
+    public void verifyTheProductExistOnCart(String productName) {
+        List<WebElement> list = driver.findElements(By.cssSelector("[class='inventory_item_name']"));
+        for (WebElement el : list) {
+            if (getText(productElementName).equalsIgnoreCase(productName)) {
+                break;
+            }
+        }
+    }
 }

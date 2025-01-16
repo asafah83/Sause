@@ -14,6 +14,7 @@ public class BuyProductTest extends BaseTest {
 //        WebDriver driver = new ChromeDriver();
 //        driver.manage().window().maximize();
 //        driver.get("https://www.saucedemo.com/");
+
     @BeforeMethod
     public void setUpProductsPages() {
         // Initialize commonly used pages

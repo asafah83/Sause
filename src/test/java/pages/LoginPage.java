@@ -25,6 +25,9 @@ public class LoginPage extends BasePage {
         click(submitButton);
         sleep(1500);
     }
+    public void loginUsingValidUserDetails() throws InterruptedException {
+        login("standard_user", "secret_sauce");
+    }
 
     public String getErrorMessage() {
         return getText(errorMessage);
