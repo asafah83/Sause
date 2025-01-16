@@ -1,10 +1,9 @@
-package pageObjects;
+package pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestListener;
 
 import java.time.Duration;
@@ -60,11 +59,11 @@ public class BasePage implements ITestListener {
             e.printStackTrace();
         }
     }
-    public void getAlertOk() {
+    public void acceptAlert() {
         driver.switchTo().alert().accept(); // click OK in alert
     }
 
-    public void getAlertCancel() {
+    public void dismissAlert() {
         driver.switchTo().alert().dismiss(); // click cancel in alert
     }
 

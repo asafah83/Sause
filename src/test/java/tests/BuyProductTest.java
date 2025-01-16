@@ -2,7 +2,7 @@ package tests;
 
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
-import pageObjects.*;
+import pages.*;
 
 public class BuyProductTest extends BaseTest {
     // WebDriver driver;
@@ -38,7 +38,7 @@ public class BuyProductTest extends BaseTest {
 
         CheckoutInformationPage checkoutInformationPage = new CheckoutInformationPage(driver);
 
-        checkoutInformationPage.verifyPageTitle("Checkout: Your Information\n");
+        checkoutInformationPage.verifyPageTitle("Checkout: Your Information");
         checkoutInformationPage.fillInformation("Asaf", "Aharoni", "12345");
         checkoutInformationPage.clickContinue();
 
@@ -64,13 +64,12 @@ public class BuyProductTest extends BaseTest {
     }
 
     @Test
-    @Description("This test check the functionality of the sort")
+    @Description("This test check the Sort functionality")
     public void tc3Sorting() throws InterruptedException {
         LoginPage lp = new LoginPage(driver);
         lp.login("standard_user", "secret_sauce");
         ProductsPage productsPage = new ProductsPage(driver);
         productsPage.sortByOption("Price (low to high)");
-
     }
 }
 
