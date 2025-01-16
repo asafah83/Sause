@@ -4,9 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f499fda-b6fe-4108-98f2-0980f9731586" name="Changes" comment="1. Adding more, tests and methods">
+    <list default="true" id="4f499fda-b6fe-4108-98f2-0980f9731586" name="Changes" comment="Refactoring methods names in the basePage">
+      <change afterPath="$PROJECT_DIR$/allure-results/05dc14b0-2d4d-4240-9cf1-717b25442b57-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0d668f7e-c85b-44bf-9131-68eec9affd7d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0e5d7953-dd09-474a-ad4e-497fd28da6b2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0fd763e7-82d8-412e-b489-d0e789fb8ae0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2223d6ab-1865-479e-8397-dececd69432a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/24f24987-540d-4655-a7e4-1e9de93f0add-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3b394df2-fb29-4490-86ae-a5c3f8593b9f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/47f2e786-74f5-4c66-8b42-42a6ab056733-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8c68a005-d93c-4110-bdbd-e60dced0d7a7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9331f84d-5443-4de1-b4fd-77d3383f57c1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9d9275d4-f000-48ac-b06a-e350e599a58f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9e92d242-2d7a-4e5b-b8df-42af48f5b2c7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a80f8315-0895-4bb0-a982-c6e96999b9d5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a8a54e6a-c326-4d5f-978e-9769f4ac3e20-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b3645455-3949-4f87-93aa-7ba62985d8c7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c3e70999-cbbd-4501-963e-50d1e66c5706-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ca606803-c79c-4265-8d54-2936033274cb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d99ccef6-8249-416e-83cf-640ce4a79ec8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/dd7592da-8505-4110-9a0f-ef9bff662f1d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e37eae09-0aff-4cc9-9449-60dae9b78523-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f58fe861-2478-4812-9f5a-870de9e0fc9f-container.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/tc2PositiveTestE2E.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/tc2PositiveTestE2E.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BuyProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BuyProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +38,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="MavenRunConfiguration" name="AdvancedSelenium [compile]" />
-    </enabled-run-configurations>
-  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "asafah83"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/asafah83/SauseDemo-project-based-on-Maven-Java-Selenium-.git",
+    "accountId": "50bf86a3-8127-468d-8661-1caa3bbbccda"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -45,6 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.BuyProductTest.executor": "Run",
+    "TestNG.BuyProductTest.tc1Negative.executor": "Run",
     "TestNG.BuyProductTest.tc2PositiveTestE2E.executor": "Run",
     "TestNG.BuyProductTest.tc3Sorting.executor": "Coverage",
     "TestNG.BuyProductTest.tc4_addProductToCartFromProductsPage.executor": "Run",
@@ -68,7 +97,7 @@
       <recent name="C:\Automation\SaucedemoMavenProjectBasedOnJavaAndSelenium\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BuyProductTest.tc4_addProductToCartFromProductsPage">
+  <component name="RunManager" selected="TestNG.BuyProductTest.tc2PositiveTestE2E">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SaucedemoMavenProjectBasedOnJavaAndSelenium" />
       <method v="2">
@@ -93,6 +122,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.BuyProductTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuyProductTest.tc1Negative" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AdvancedSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.BuyProductTest" />
+      <option name="METHOD_NAME" value="tc1Negative" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -153,30 +200,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AdvancedSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BuyProductTest.tc2PositiveTestE2E" />
+        <item itemvalue="TestNG.BuyProductTest.tc1Negative" />
         <item itemvalue="TestNG.BuyProductTest.tc4_addProductToCartFromProductsPage" />
         <item itemvalue="TestNG.BuyProductTest.tc3Sorting" />
         <item itemvalue="TestNG.BuyProductTest" />
-        <item itemvalue="TestNG.BuyProductTest.tc2PositiveTestE2E" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735477779558</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactoring methods names in the basePage">
+      <option name="closed" value="true" />
+      <created>1737011213279</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737011213279</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +280,8 @@
     <MESSAGE value="pom.xml" />
     <MESSAGE value="1. Updating the pom.xml&#10;2. Typo fix" />
     <MESSAGE value="1. Adding more, tests and methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Adding more, tests and methods" />
+    <MESSAGE value="Refactoring methods names in the basePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring methods names in the basePage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
