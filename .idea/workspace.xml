@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f499fda-b6fe-4108-98f2-0980f9731586" name="Changes" comment="Refactoring methods names in the basePage">
+      <change afterPath="$PROJECT_DIR$/ScreenShots/tc2_verifyChangingTextOfAddButton.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/01fe71fb-c82b-4c09-8f20-fc8764706736-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/24d46f25-453c-4e3e-8f8d-9effc3e30e5a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/41cd98f7-669b-4202-b054-d6f70edea07e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7cadaa06-276a-45d2-8d96-e8abf374b32a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/94f54017-fe89-4e1b-8fb7-1cc56a2f2539-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/bb39fb1a-618d-4afb-b84d-06ddf9536662-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c6eeded8-281f-4eab-86ec-0164182eab9b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e5f55020-58cc-4069-9da2-ae599f76f5f0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e7626d6c-9928-4ab1-bcbf-0916aa5c418a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f672dbd1-e66f-47df-abe9-9f2f41bcf4a1-container.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProductsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProductsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,32 +62,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Maven.AdvancedSelenium [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AdvancedSelenium [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AdvancedSelenium [test].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.BuyProductTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BuyProductTest.tc1Negative.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BuyProductTest.tc2PositiveTestE2E.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BuyProductTest.tc3Sorting.executor&quot;: &quot;Coverage&quot;,
-    &quot;TestNG.BuyProductTest.tc4_addProductToCartFromProductsPage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.tc1loginFailed1.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.tc4_loginFailedUsingDDT.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTests.tc1_verifyAddingProductToCart.executor&quot;: &quot;Debug&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Automation/SaucedemoMavenProjectBasedOnJavaAndSelenium&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Automation/Saucedemo Maven Project Based On Java and Selenium/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven.AdvancedSelenium [clean].executor": "Run",
+    "Maven.AdvancedSelenium [compile].executor": "Run",
+    "Maven.AdvancedSelenium [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.BuyProductTest.executor": "Run",
+    "TestNG.BuyProductTest.tc1Negative.executor": "Run",
+    "TestNG.BuyProductTest.tc2PositiveTestE2E.executor": "Run",
+    "TestNG.BuyProductTest.tc3Sorting.executor": "Coverage",
+    "TestNG.BuyProductTest.tc4_addProductToCartFromProductsPage.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.tc1loginFailed1.executor": "Run",
+    "TestNG.LoginTest.tc4_loginFailedUsingDDT.executor": "Run",
+    "TestNG.ProductsTests.tc1_verifyAddingProductToCart.executor": "Debug",
+    "TestNG.ProductsTests.tc2_verifyChangingTextOfAddButton.executor": "Debug",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Automation/SaucedemoMavenProjectBasedOnJavaAndSelenium/src/test/java",
+    "last_opened_file_path": "C:/Automation/SaucedemoMavenProjectBasedOnJavaAndSelenium",
+    "onboarding.tips.debug.path": "C:/Automation/Saucedemo Maven Project Based On Java and Selenium/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Automation\Saucedemo Maven Project Based On Java and Selenium\src\test\java" />
@@ -85,7 +99,7 @@
       <recent name="C:\Automation\SaucedemoMavenProjectBasedOnJavaAndSelenium\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ProductsTests.tc1_verifyAddingProductToCart">
+  <component name="RunManager" selected="TestNG.ProductsTests.tc2_verifyChangingTextOfAddButton">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SaucedemoMavenProjectBasedOnJavaAndSelenium" />
       <method v="2">
@@ -135,24 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuyProductTest.tc4_addProductToCartFromProductsPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AdvancedSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.BuyProductTest" />
-      <option name="METHOD_NAME" value="tc4_addProductToCartFromProductsPage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginTest.tc4_loginFailedUsingDDT" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AdvancedSelenium" />
       <extension name="coverage">
@@ -189,13 +185,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductsTests.tc2_verifyChangingTextOfAddButton" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AdvancedSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ProductsTests" />
+      <option name="METHOD_NAME" value="tc2_verifyChangingTextOfAddButton" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ProductsTests.tc2_verifyChangingTextOfAddButton" />
         <item itemvalue="TestNG.ProductsTests.tc1_verifyAddingProductToCart" />
         <item itemvalue="TestNG.LoginTest.tc4_loginFailedUsingDDT" />
         <item itemvalue="TestNG.BuyProductTest.tc2PositiveTestE2E" />
         <item itemvalue="TestNG.BuyProductTest.tc1Negative" />
-        <item itemvalue="TestNG.BuyProductTest.tc4_addProductToCartFromProductsPage" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +293,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/ProductsTests.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

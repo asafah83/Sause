@@ -86,7 +86,7 @@ public class ProductsPage extends BasePage {
         }
     }
 
-    @Step("")
+    @Step("Verify that the button has the 'Add' name/text")
     public void verifyTextOfAddButton(String name) {
         List<WebElement> list = driver.findElements(By.cssSelector(".inventory_item"));
         for (WebElement el : list) {
@@ -95,11 +95,12 @@ public class ProductsPage extends BasePage {
                 WebElement addBtn = el.findElement(By.cssSelector(".btn.btn_primary.btn_small.btn_inventory"));
                 String actualButtonText = getText(addBtn);
                 Assert.assertEquals(actualButtonText, "Add to cart");
+                click(addBtn);
             }
         }
     }
 
-    @Step("")
+    @Step("Verify that the 'Add' button text was replaced with 'Remove' after clicking the 'Add'")
     public void verifyAddTextReplacedWithRemoveText(String name) {
         List<WebElement> list = driver.findElements(By.cssSelector(".inventory_item"));
         for (WebElement el : list) {
