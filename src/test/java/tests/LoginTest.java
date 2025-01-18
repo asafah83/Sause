@@ -6,6 +6,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.ProductsPage;
+import utils.ExcelUtils;
+
+import java.io.IOException;
 
 public class LoginTest extends BaseTest {
     private LoginPage loginPage;
@@ -42,11 +45,6 @@ public class LoginTest extends BaseTest {
         loginPage.login(user, password);
         loginPage.verifyTheErrorMessage("Epic sadface: Username and password do not match any user in this service");
     }
-    @Test(dataProvider = "getDataFromExcel")
-    public void tc5_loginFailedUserFromExcel(String user, String password) throws InterruptedException {
-        loginPage.login(user, password);
-    }
-
     @DataProvider
     public Object[][] getData() {
         Object[][] myData = {
@@ -57,4 +55,23 @@ public class LoginTest extends BaseTest {
         };
         return myData;
     }
-}
+
+    @Test
+    public void testLoginWithExcelData() throws IOException, InterruptedException {
+        // Load the Excel file
+        String filePath = "src/test/resources/data/LoginData.xlsx";
+        ExcelUtils excel = new ExcelUtils(filePath);
+
+        // Read login data from the Excel sheet
+        String username = excel.getCellData("Login", 1, 0); // Row 1, Column 0
+        String password = excel.getCellData("Login", 1, 1); // Row 1, Column 1
+
+        // Perform login
+        LoginPage lp = new LoginPage(driver);
+        lp.login(username, password);
+
+        // Clean up
+        excel.close();
+    }
+    }
+
