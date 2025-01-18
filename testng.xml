@@ -6,15 +6,24 @@
         <classes>
             <class name="tests.BuyProductTest">
                 <methods>
-                    <include name="tc1Negative"/>
-                    <include name="tc2PositiveTestE2E"/>
+                    <include name="tc1_Negative"/>
+                    <include name="tc2_PositiveTestE2E"/>
+                    <include name="tc3_addProductToCartFromProductsPage"/>
                 </methods>
             </class>
             <class name="tests.LoginTest">
                 <methods>
-                    <include name="tc1loginFailed1"/>
-                    <include name="tc2loginSuccess"/>
-                    <include name="tc3JustaPrint"/>
+                    <include name="tc1_loginSuccess"/>
+                    <include name="tc2_loginFailed1"/>
+                    <include name="tc3_LockedOutLogin"/>
+                    <include name="tc4_loginFailedUsingDDT"/>
+                    <include name="tc5_testLoginWithExcelData"/>
+                </methods>
+            </class>
+            <class name="tests.ProductsTests">
+                <methods>
+                    <include name="tc1_verifyAddingProductToCart"/>
+                    <include name="tc2_verifyChangingTextOfAddButton"/>
                 </methods>
             </class>
         </classes>

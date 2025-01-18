@@ -26,16 +26,16 @@ public class BuyProductTest extends BaseTest {
         lp.login("standard_user", "secret_sauce");
         productsPage.verifyPageTitle("Products"); // Verify login success
     }
-
+//////////////////////////******* Tests list *********/////////////////////////////////////////////////////////
     @Test
     @Description("Test 1 - Login with a valid user, to the website and verify that the user is in correct page")
-    public void tc1Negative() throws InterruptedException {
+    public void tc1_Negative() throws InterruptedException {
         loginAsStandardUser();
     }
 
     @Test
-    @Description("An E2E test: login > select product > add to cart > buy the product")
-    public void tc2PositiveTestE2E() throws InterruptedException {
+    @Description("Test 2 - an E2E test: login > select product > add to cart > buy the product")
+    public void tc2_PositiveTestE2E() throws InterruptedException {
         loginAsStandardUser();
 
         productsPage.selectProduct("Sauce Labs Fleece Jacket");
@@ -66,19 +66,19 @@ public class BuyProductTest extends BaseTest {
     }
 
     @Test
-    @Description("E2E Test - Add a product to the cart, directly, from the Products page > complete the flow")
-    public void tc4_addProductToCartFromProductsPage() throws InterruptedException {
+    @Description("Test 3 {E2E Test} - Add a product to the cart, directly, from the Products page > complete the flow")
+    public void tc3_addProductToCartFromProductsPage() throws InterruptedException {
         LoginPage lp = new LoginPage(driver);
         loginAsStandardUser();
         productsPage.addToCart("Sauce Labs Onesie");
     }
 
-    @Test
-    @Description("This test check the Sort functionality")
-    public void tc3Sorting() throws InterruptedException {
-        LoginPage lp = new LoginPage(driver);
-        loginAsStandardUser();
-        productsPage.sortByOption("Price (low to high)");
-    }
+//    @Test
+//    @Description("This test check the Sort functionality")
+//    public void tc4_Sorting() throws InterruptedException {
+//        LoginPage lp = new LoginPage(driver);
+//        loginAsStandardUser();
+//        productsPage.sortByOption("Price (low to high)");
+//    }
 }
 

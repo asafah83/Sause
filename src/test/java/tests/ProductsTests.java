@@ -19,6 +19,7 @@ public class ProductsTests extends BaseTest {
         lp.loginUsingValidUserDetails();
         productsPage = new ProductsPage(driver);
     }
+    ////////////////////////////////*********** Test list ********////////////////////////////////
 
     @Test
     @Description("Verify that the product was added properly to the shopping cart")
