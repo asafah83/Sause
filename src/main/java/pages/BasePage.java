@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestListener;
+import org.testng.annotations.DataProvider;
 
 import java.time.Duration;
 import java.util.List;
@@ -82,6 +83,9 @@ public class BasePage implements ITestListener {
                 + originalStyle + "');},400);", element);
 
     }
+    //Use the Excel class to read data from excel
+
+
 
 //    public void assertion(WebElement element, String actualValue, String expectedValue) {
 //        actualValue = getText(element);

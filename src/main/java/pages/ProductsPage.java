@@ -26,6 +26,7 @@ public class ProductsPage extends BasePage {
         super(driver);
     }
 
+    @Step
     public void selectFromMenu(String optionToSelect) {
         click(burgerMenu);
         //selectSpecificValueFromList("[class='bm-menu'] a", menuOption);

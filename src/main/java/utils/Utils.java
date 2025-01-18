@@ -1,5 +1,7 @@
 package utils;
 
+import org.testng.annotations.DataProvider;
+
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
@@ -23,6 +25,5 @@ public class Utils {
             }
             return value;
         }
-
     }
 

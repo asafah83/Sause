@@ -42,6 +42,7 @@ public class BuyProductTest extends BaseTest {
 
         ProductPage productPage = new ProductPage(driver);
         productPage.addProductToCart();
+        productPage.movingToShoppingCartPage();
 
         YourCartPage yourCartPage = new YourCartPage(driver);
         yourCartPage.verifyPageTitle("Your Cart");
